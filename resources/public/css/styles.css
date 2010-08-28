@@ -1,0 +1,121 @@
+#slider {
+  margin: 50px;}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: arial;}
+
+  body a {
+    text-decoration: none;
+    color: black;
+    font-size:50px;}
+
+  body form {
+    text-align: center;}
+
+    body form input {
+      border: 3px solid black;
+      font-size: 20px;}
+
+    body form status {
+}
+
+      body form status input {
+        border: 3px solid black;
+        height: 35px;
+        font-size: 25px;
+        width: 60%;}
+
+    body form submit-status {
+}
+
+      body form submit-status input {
+        border: 3px solid black;
+        height: 25px;}
+
+    body form search {
+}
+
+      body form search input {
+        font-size: 38px;
+        border: 3px solid black;
+        height: 50px;
+        width: 60%;
+        text-align: center;}
+
+    body form submit-search {
+}
+
+      body form submit-search input {
+        border: 3px solid black;
+        height: 40px;
+        width: 15%;}
+
+  body table {
+    text-align: center;}
+
+input {
+  background-color: white;}
+
+header {
+  display: block;
+  background-color: black;
+  color: #ea7910;
+  font-family: arial;
+  text-align: center;
+  font-size: 50px;}
+
+  header a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 21px 0px 0px;}
+
+h.small {
+  font-size: 20px;}
+
+h.large {
+  font-size: 50px;
+  font-weight: bold;}
+
+response {
+  color: black;
+  font-size: 30px;}
+
+table.small {
+  font-size: 20px;
+  border-color: black;}
+
+table.small a {
+  font-size: 20px;}
+
+  table.small th {
+    border-width: 3px;
+    font-size: 20px;
+    border: 3px solid black;}
+
+  table.small td {
+    border-width: 3px;
+    font-size: 20px;
+    border: 3px solid black;}
+
+tr th {
+    font-size: 50px;}
+
+tr td {
+    font-size: 50px;}
+
+feed a {
+  font-size: 20px;
+  color: #ea7910;}
+
+tag a {
+  color: #ea7910;}
+
+user a {
+  color: #008000;}
+
+word {
+  color: #2276bb;}
