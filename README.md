@@ -7,6 +7,11 @@ as I write it, so the code isn't great. However, it does show a use
 of some libraries which are lacking documentation, and could prove
 useful for learning how to use those.
 
+## todo
+
+- Complete refactor.
+- Congomongo in place of StupidDB.
+
 ## Usage
 
 - If you're using Windows, the text will display better with ClearType text off.

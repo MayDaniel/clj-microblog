@@ -1,7 +1,8 @@
 (ns clj-microblog.utils
   (:use [clojure.string :only [join]])
-  (:require [clojure.contrib.str-utils :as str]
-            [clojure.contrib.str-utils2 :as str2]))
+  (:require [clojure.contrib
+             [str-utils :as str]
+             [str-utils2 :as str2]]))
 
 (defn ->title [s]
   (join " " (str/re-split #"_+|-+|\s+" s)))

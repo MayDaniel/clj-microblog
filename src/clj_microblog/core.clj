@@ -1,17 +1,17 @@
 (ns clj-microblog.core
-  (:use [clj-microblog.confirmation :only [send-val-msg]]
-        [clj-microblog.constants :only [responses regexps pages]]
-        [clj-microblog.feeds :only [user-feed]]
-        [clj-microblog.date :only [date-str time-difference-secs]]
-        [clj-microblog.utils :only [trim-spaces remove-first keywordize swap-vals-in parse-int with-timeout throws-exception?]]
-        [clj-microblog.html :only [redirect-to simple-table tr th td tab-list]]
-        [hiccup core page-helpers form-helpers]
+  (:use [hiccup core page-helpers form-helpers]
         stupiddb.core
         [ring.middleware params file session stacktrace]
         net.cgrand.moustache
         [clojure.string :only [join lower-case capitalize blank? replace-first]]
         [clojure.contrib.str-utils :only [re-split]]
-        [clojure.contrib.str-utils2 :only [grep]])
+        [clj-microblog
+         [confirmation :only [send-val-msg]]
+         [constants :only [responses regexps pages]]
+         [feeds :only [user-feed]]
+         [date :only [date-str time-difference-secs]]
+         [utils :only [trim-spaces remove-first keywordize swap-vals-in parse-int]]
+         [html :only [redirect-to simple-table tr th td tab-list]]])
   (:require [clojure.contrib.str-utils2 :as str])
   (:import java.util.Date))
 
@@ -61,7 +61,7 @@
        (map :status)
        (join " ")
        (re-split #"\s+")
-       (grep #"^#")
+       (str/grep #"^#")
        (map remove-first)
        (map capitalize)
        (frequencies)
@@ -82,7 +82,7 @@
         [:word word]))))
 
 (defn search [search-term coll]
-  (grep (re-pattern (str "(?i)" search-term)) coll))
+  (str/grep (re-pattern (str "(?i)" search-term)) coll))
 
 (defn search-users [search-term]
   (->> :users
