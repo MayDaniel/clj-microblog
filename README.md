@@ -1,16 +1,6 @@
 # Clj-Microblog
 
-Clj-Microblog is an attempt at writing a microblogging site.
-
-This is my first web project, and I've pretty much been designing it
-as I write it, so the code isn't great. However, it does show a use
-of some libraries which are lacking documentation, and could prove
-useful for learning how to use those.
-
-## todo
-
-- Complete refactor.
-- Congomongo in place of StupidDB.
+Clj-Microblog was an attempt at writing a microblogging site.
 
 ## Usage
 
