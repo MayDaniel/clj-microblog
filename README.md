@@ -1,12 +1,6 @@
-# Clj-Microblog
+# clj-microblog
 
-Clj-Microblog was an attempt at writing a microblogging site.
-
-## Usage
-
-- If you're using Windows, the text will display better with ClearType text off.
-
-- I've been displaying Clj-Microblog with Google Chrome, on Ubuntu, with a resolution of 1680x1050. I don't know how the site will look on much other.
+clj-microblog was an attempt at writing a microblogging site.
 
 ## Installation/Use
 
@@ -22,4 +16,4 @@ There are a few ways to start the server.
 
 ## License
 
-Clj-Microblog is licensed under the Eclipse Public License, the same as Clojure.
+clj-microblog is licensed under the Eclipse Public License, the same as Clojure.
